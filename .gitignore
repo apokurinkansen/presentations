@@ -1,0 +1,12 @@
+# Marp build output
+*.html
+*.pdf
+*.pptx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+!.vscode/settings.json
