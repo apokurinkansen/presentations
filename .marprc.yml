@@ -1,0 +1,6 @@
+lang: ja
+theme: themes/index.css
+themeSet: ./themes
+size: 16:9
+engine: engine.mjs
+allowLocalFiles: true

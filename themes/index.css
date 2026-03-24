@@ -1,0 +1,11 @@
+/* @theme custom */
+
+/* Base theme */
+@import 'gaia';
+
+/* Syntax highlighting */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css');
+
+/* Import custom theme */
+@import 'global';
+@import 'utility';
