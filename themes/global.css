@@ -44,24 +44,27 @@ section {
 
 section h1 {
   font-family: 'Cormorant Garamond', 'Shippori Mincho B1', serif;
-  font-size: 1.5em;
+  font-size: 36px;
   font-weight: 700;
   color: var(--color-highlight);
   border-bottom: none;
   margin-bottom: 0.4em;
+  --auto-scaling: none;
 }
 
 section h2 {
-  font-size: 1.15em;
+  font-size: 30px;
   font-weight: 600;
   color: var(--color-text-sub);
   margin-bottom: 0.3em;
+  --auto-scaling: none;
 }
 
 section h3 {
-  font-size: 1.05em;
+  font-size: 26px;
   font-weight: 600;
   color: var(--color-text-sub2);
+  --auto-scaling: none;
 }
 
 /* ========================================
@@ -254,7 +257,7 @@ section.small {
    ======================================== */
 
 header {
-  font-size: 0.5em;
+  font-size: 14px;
   color: var(--color-text-sub2);
   opacity: 0.6;
   letter-spacing: 0.08em;
