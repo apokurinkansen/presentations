@@ -77,8 +77,38 @@ paginate: true
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# なぜ情報セキュリティが大事なのか
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
+
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか**
+2. **実際のインシデント事例**
+3. **サイバー攻撃の手口と防衛策**
+4. **自社で起きたこと**
+5. **パスワード・認証管理**
+6. **カフェのWiFiは使わない**
+
+![w:280 yubisashi](./images/yubisashi.png)
+
+---
+
+<!-- _class: section -->
+<!-- _paginate: false -->
+
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
+
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.highlight}
+2. **実際のインシデント事例** {.gray}
+3. **サイバー攻撃の手口と防衛策** {.gray}
+4. **自社で起きたこと** {.gray}
+5. **パスワード・認証管理** {.gray}
+6. **カフェのWiFiは使わない** {.gray}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -212,8 +242,20 @@ paginate: true
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# 実際のインシデント事例
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
+
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.gray}
+2. **実際のインシデント事例** {.highlight}
+3. **サイバー攻撃の手口と防衛策** {.gray}
+4. **自社で起きたこと** {.gray}
+5. **パスワード・認証管理** {.gray}
+6. **カフェのWiFiは使わない** {.gray}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -335,8 +377,20 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# サイバー攻撃の手口と防衛策
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
+
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.gray}
+2. **実際のインシデント事例** {.gray}
+3. **サイバー攻撃の手口と防衛策** {.highlight}
+4. **自社で起きたこと** {.gray}
+5. **パスワード・認証管理** {.gray}
+6. **カフェのWiFiは使わない** {.gray}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -405,7 +459,9 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 
 # フィッシングメールの例
 
-![w:480 フィッシングメールの例](./images/phishing-example-sbi.png)
+<style scoped>p:has(img) { text-align: center; }</style>
+
+![w:700 フィッシングメールの例](./images/phishing-example-rakuten.png)
 
 ---
 
@@ -554,10 +610,20 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# 自社で起きたこと
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
 
-他人事ではない——私たちの会社でも実際にインシデントが発生した
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.gray}
+2. **実際のインシデント事例** {.gray}
+3. **サイバー攻撃の手口と防衛策** {.gray}
+4. **自社で起きたこと** {.highlight}
+5. **パスワード・認証管理** {.gray}
+6. **カフェのWiFiは使わない** {.gray}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -567,11 +633,19 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 
 ## チャットツール上で社員を装い、会社情報を引き抜こうとした
 
-### 何が起きたか
+### 攻撃フロー
 
-1. 攻撃者が社員のアカウントになりすましてチャットツールに参加
-2. 本人を装って他の社員に接触
-3. 社内情報を聞き出そうとした
+:::_ {.panel-card}
+**Step 1** → 攻撃者が社員のアカウントになりすましてチャットツールに参加
+:::
+
+:::_ {.panel-card}
+**Step 2** → 本人を装って他の社員に接触
+:::
+
+:::_ {.panel-card}
+**Step 3** → 社内情報を聞き出そうとした
+:::
 
 :::_ {.panel-accent}
 **普段やり取りしている相手でも、違和感があれば別の手段で本人確認する**
@@ -585,12 +659,23 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 
 ## メンバーのID/PWが漏洩し、クライアントにフィッシングURLを送信
 
-### 何が起きたか
+### 攻撃フロー
 
-1. 外部から不審なURLが送信される
-2. クリックし、表示されたGoogleログインフォームで入力しID/PWが漏洩
-3. 攻撃者がそのアカウントでチャットツールにログイン（OAuth2）
-4. 取引先のクライアントにフィッシングURLを送信してしまった
+:::_ {.panel-card}
+**Step 1** → 外部から不審なURLが送信される
+:::
+
+:::_ {.panel-card}
+**Step 2** → クリックし、表示されたGoogleログインフォームで入力しID/PWが漏洩
+:::
+
+:::_ {.panel-card}
+**Step 3** → 攻撃者がそのアカウントでチャットツールにログイン（OAuth2）
+:::
+
+:::_ {.panel-card}
+**Step 4** → 取引先のクライアントにフィッシングURLを送信してしまった
+:::
 
 :::_ {.panel-accent}
 **被害が社内で完結しない**——取引先・クライアントに直接影響が及んだ
@@ -630,7 +715,7 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 :::
 
 :::_
-![w:700 これ重要だよ](./images/important-mark.png)
+![w:700 これ重要だよ](./images/important-crying.png)
 :::
 
 ::::
@@ -638,8 +723,20 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# パスワード・認証管理
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
+
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.gray}
+2. **実際のインシデント事例** {.gray}
+3. **サイバー攻撃の手口と防衛策** {.gray}
+4. **自社で起きたこと** {.gray}
+5. **パスワード・認証管理** {.highlight}
+6. **カフェのWiFiは使わない** {.gray}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -752,10 +849,20 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 ---
 
 <!-- _class: section -->
+<!-- _paginate: false -->
 
-# カフェのWiFiは使わない
+<style scoped>img[alt="yubisashi"] { position: absolute; right: 40px; bottom: 40px; box-shadow: none; }</style>
 
-パスワードを守っても、通信そのものが盗み見られたら意味がない
+# 目次
+
+1. **なぜ情報セキュリティが大事なのか** {.gray}
+2. **実際のインシデント事例** {.gray}
+3. **サイバー攻撃の手口と防衛策** {.gray}
+4. **自社で起きたこと** {.gray}
+5. **パスワード・認証管理** {.gray}
+6. **カフェのWiFiは使わない** {.highlight}
+
+![w:280 yubisashi](./images/yubisashi.png)
 
 ---
 
@@ -808,7 +915,7 @@ IP制限の設定不備と未使用の共有アカウントを悪用され、多
 あなた → **攻撃者に丸見え** → インターネット
 :::
 
-:::_ {.panel-highlight}
+:::_ {.panel-success}
 **VPNあり**
 あなた → VPNサーバー（暗号化トンネル） → インターネット
 :::
